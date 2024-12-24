@@ -4,8 +4,7 @@ A simple **Text-to-Speech Converter** built with **HTML**, **CSS**, and **JavaSc
 
 ## 🚀 Live Demo
 
-Check out the live version here: [Live Demo](#)  
-*(Add the deployment link here if hosted on GitHub Pages, Vercel, etc.)*
+Check out the live version here: [Live Demo](https://text-to-speechcnv.netlify.app/)  
 
 ## 🛠️ Technologies Used
 
