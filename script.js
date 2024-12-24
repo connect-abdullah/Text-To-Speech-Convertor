@@ -20,3 +20,9 @@ document.querySelector('button').addEventListener('click', () => {
     
     window.speechSynthesis.speak(speech);
 });
+
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (isSafari) {
+    alert('This app may not work properly in Safari due to limited voice support. Please try using Google Chrome for the best experience.');
+}
