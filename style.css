@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;  
+    background: linear-gradient(45deg, #080c49, #0d5961);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color : white;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight:500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.hero h1 span {
+    color: #ff2963;
+}
+
+textarea {
+    width : 600px;
+    height : 250px;
+    padding : 20px;
+    background: #413d84ac;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder{
+    font-family: 17px;
+    color: #ddd;
+}
+
+.row {
+    width: 600px;
+    display : flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background-color: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+select {
+    flex: 1;
+    color: #fff;
+    background : #413d84ac;
+    height : 50px;
+    padding : 0px 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    margin-right: 10px;
+    appearance: none;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+        margin-bottom: 30px; 
+    }
+
+    textarea {
+        width: 90%; /* Reduce width for better fit */
+        height: 180px; /* Slightly reduce height */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .row {
+        flex-direction: column; /* Stack dropdown and button vertically */
+        gap: 15px; /* Add spacing between items */
+        width: 90%; /* Reduce overall width for smaller screens */
+    }
+
+    button {
+        width: 30%;
+        max-width: none;
+        font-size: 0.9rem;
+        padding: 10px 25px;
+        position: absolute;
+        left: 35%;
+    }
+
+    select {
+        width: 100%; /* Dropdown takes full width */
+        height: 45px; /* Adjust height for smaller screens */
+        font-size: 0.9rem; /* Adjust font size */
+        margin-bottom: 18px;
+    }
+}
+
+/* Responsive Design for Mobile Phones */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem; /* Further reduce font size */
+    }
+
+    textarea {
+        height: 150px; /* Reduce height for smaller screens */
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+
+    .row {
+        gap: 10px; /* Reduce spacing between dropdown and button */
+        width: 100%; /* Full width */
+    }
+
+    button {
+        font-size: 0.8rem; /* Smaller button text */
+        padding: 8px 20px; /* Reduce padding */
+    }
+
+    select {
+        height: 40px; /* Reduce dropdown height */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+}
